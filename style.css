@@ -1,0 +1,86 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ .yol {
+     height: 100vh;
+     width: 100%;
+     background-image: url(arxafoto.jpg);
+     background-size: cover;
+
+ }
+
+ .araba {
+     width: 100%;
+     height: 60vh;
+     position: absolute;
+     top: 200px;
+     left: 300px;
+     animation-name: araba;
+     animation-direction: normal;
+     animation-duration: 6s;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     animation-direction: reverse;
+ }
+
+ @keyframes araba {
+     0% {
+         transform: translateX(0);
+     }
+
+     50% {
+         transform: translateX(150px);
+     }
+
+     100% {
+         transform: translateX(0);
+     }
+
+ }
+
+ .card_about{
+    color: rgb(15, 124, 214);
+    text-align: center;
+    font-size: 35px;
+    padding: 30px;
+ }
+ .product{
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+ }
+
+ .productcard{
+    padding-top: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ .product img{
+    width: 100%px;
+    height: 50vh;
+ }
+ .icon i{
+    width:70px;
+    display: flex;
+    background-color: rgb(100, 197, 132);
+    color: black;
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    padding: 13px;
+    position: absolute;
+ }
+ #left{
+    top:1130px ;
+    left: 160px ;
+ }
+ #right{
+    top: 1110px;
+    right: 160px;
+ }
